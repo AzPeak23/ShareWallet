@@ -1,0 +1,16 @@
+PODS:
+  - ShareWallet (0.1.0)
+
+DEPENDENCIES:
+  - ShareWallet (from `../`)
+
+EXTERNAL SOURCES:
+  ShareWallet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ShareWallet: 93a120271f43832e1d69df676b0ba1ef6a009117
+
+PODFILE CHECKSUM: 17f02ed8994d8438d491cc89f346dee83e2304eb
+
+COCOAPODS: 1.11.3

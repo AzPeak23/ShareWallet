@@ -1,0 +1,6 @@
+framework module ShareWallet {
+  umbrella header "ShareWallet-umbrella.h"
+
+  export *
+  module * { export * }
+}
