@@ -4,7 +4,12 @@ platform :ios, '10.0'
 
 target 'ShareWallet_Example' do
   pod 'ShareWallet', :path => '../'
-
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'XLPagerTabStrip', :git => 'https://github.com/AbubakerM/ForkedXLPagerTabStrip'
+  pod 'SwipeCellKit'
+  pod 'ToastViewSwift'
+  pod 'JPush', '4.6.6'
+  
   target 'ShareWallet_Tests' do
     inherit! :search_paths
 
