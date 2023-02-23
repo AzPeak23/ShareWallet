@@ -21,16 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/ashahrouj/ShareWallet'
+  s.homepage         = 'https://github.com/AzPeak23/ShareWallet.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ashahrouj' => 'shahrouj@peakperformances.io' }
-  s.source           = { :git => 'https://github.com/ashahrouj/ShareWallet.git', :tag => s.version.to_s }
+  s.author           = { 'AzPeak23' => 'shahrouj@peakperformances.io' }
+  s.source           = { :git => 'https://github.com/AzPeak23/ShareWallet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'ShareWallet/Classes/**/*'
+  s.ios.deployment_target = '13.0'
+  s.source_files = '**/*.{swift}'
   
   # s.resource_bundles = {
   #   'ShareWallet' => ['ShareWallet/Assets/*.png']
