@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SetPinCodeViewController: UIViewController {
+public class SetPinCodeViewController: UIViewController {
 
     private let containerView: UIView = {
         let view = UIView()

@@ -7,13 +7,13 @@
 
 import Foundation
 
-class EnterYourPinCodeViewModel {
+public class EnterYourPinCodeViewModel {
     
     init() {
         
     }
     
-    func verifyPasscode(with password: String, completionHandler: @escaping (Bool) -> Void) {
+    public func verifyPasscode(with password: String, completionHandler: @escaping (Bool) -> Void) {
         SDKManager.shared.verifyPasscode(for: password) { [weak self] result in
             guard let _ = self else { return }
             switch result {
