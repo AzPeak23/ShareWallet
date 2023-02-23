@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,129 @@
 		8A9F0FEAA866FD9B0BECD5C511EED0D5 /* Pods-ShareWallet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AED2CF607191290C7BC6F2EA13207847 /* Pods-ShareWallet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2248759AAD4B9884ED43E81631B514E /* Pods-ShareWallet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7612FF4553C73AB40728E020702472 /* Pods-ShareWallet_Tests-dummy.m */; };
 		CB8D13AB7F7ADDE7862F6CAEA1E85011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D77318AE29A78743007526D9 /* CurrencyAssetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180729A78743007526D9 /* CurrencyAssetsModel.swift */; };
+		D77318AF29A78743007526D9 /* PublicAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180829A78743007526D9 /* PublicAddressModel.swift */; };
+		D77318B029A78743007526D9 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180929A78743007526D9 /* ConfigurationModel.swift */; };
+		D77318B129A78743007526D9 /* CoinRatioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180A29A78743007526D9 /* CoinRatioModel.swift */; };
+		D77318B229A78743007526D9 /* RecentTransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180B29A78743007526D9 /* RecentTransactionsModel.swift */; };
+		D77318B329A78743007526D9 /* TransactionRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180C29A78743007526D9 /* TransactionRowModel.swift */; };
+		D77318B429A78743007526D9 /* TransactionDetailsNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773180D29A78743007526D9 /* TransactionDetailsNotificationModel.swift */; };
+		D77318B529A78743007526D9 /* CurrencyAssetsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181029A78743007526D9 /* CurrencyAssetsEnum.swift */; };
+		D77318B629A78743007526D9 /* TransactionsHistoryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181129A78743007526D9 /* TransactionsHistoryOptions.swift */; };
+		D77318B729A78743007526D9 /* TransactionsStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181229A78743007526D9 /* TransactionsStatus.swift */; };
+		D77318B829A78743007526D9 /* TitleAndSubtitleVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181429A78743007526D9 /* TitleAndSubtitleVerticalView.swift */; };
+		D77318B929A78743007526D9 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181529A78743007526D9 /* EmptyView.swift */; };
+		D77318BA29A78743007526D9 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181729A78743007526D9 /* TutorialViewController.swift */; };
+		D77318BB29A78743007526D9 /* TitleAndSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181829A78743007526D9 /* TitleAndSubtitleView.swift */; };
+		D77318BC29A78743007526D9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181A29A78743007526D9 /* WebViewController.swift */; };
+		D77318BD29A78743007526D9 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181B29A78743007526D9 /* CircleButton.swift */; };
+		D77318BE29A78743007526D9 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181D29A78743007526D9 /* Spinner.swift */; };
+		D77318BF29A78743007526D9 /* PopUpTwoActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181E29A78743007526D9 /* PopUpTwoActionsViewController.swift */; };
+		D77318C029A78743007526D9 /* PopUpActionWithIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773181F29A78743007526D9 /* PopUpActionWithIconViewController.swift */; };
+		D77318C129A78743007526D9 /* CustomLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182029A78743007526D9 /* CustomLoadingViewController.swift */; };
+		D77318C229A78743007526D9 /* CircleButtonWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182129A78743007526D9 /* CircleButtonWithTitle.swift */; };
+		D77318C329A78743007526D9 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182329A78743007526D9 /* TimerHelper.swift */; };
+		D77318C429A78743007526D9 /* Wallet-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = D773182429A78743007526D9 /* Wallet-Bridging-Header.h */; };
+		D77318C529A78743007526D9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182529A78743007526D9 /* Helper.swift */; };
+		D77318C629A78743007526D9 /* LocalDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182629A78743007526D9 /* LocalDefaultsKeys.swift */; };
+		D77318C729A78743007526D9 /* EnterYourPinCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182929A78743007526D9 /* EnterYourPinCodeViewModel.swift */; };
+		D77318C829A78743007526D9 /* SetPinCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182A29A78743007526D9 /* SetPinCodeViewModel.swift */; };
+		D77318C929A78743007526D9 /* SetPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182B29A78743007526D9 /* SetPinCodeViewController.swift */; };
+		D77318CA29A78743007526D9 /* EnterYourPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182C29A78743007526D9 /* EnterYourPinCodeViewController.swift */; };
+		D77318CB29A78743007526D9 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773182E29A78743007526D9 /* CodeTextField.swift */; };
+		D77318CC29A78743007526D9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183029A78743007526D9 /* SplashViewController.swift */; };
+		D77318CD29A78743007526D9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183129A78743007526D9 /* SplashViewModel.swift */; };
+		D77318CE29A78743007526D9 /* BychatMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183229A78743007526D9 /* BychatMockViewController.swift */; };
+		D77318CF29A78743007526D9 /* SplashIdentityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183429A78743007526D9 /* SplashIdentityView.swift */; };
+		D77318D029A78744007526D9 /* SplashViewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183529A78743007526D9 /* SplashViewViewCell.swift */; };
+		D77318D129A78744007526D9 /* ScanQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183829A78743007526D9 /* ScanQRCodeViewController.swift */; };
+		D77318D229A78744007526D9 /* PaymentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183A29A78743007526D9 /* PaymentDetailsViewModel.swift */; };
+		D77318D329A78744007526D9 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183B29A78743007526D9 /* PaymentDetailsViewController.swift */; };
+		D77318D429A78744007526D9 /* PaymentInfoMinerFeeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183D29A78743007526D9 /* PaymentInfoMinerFeeRowView.swift */; };
+		D77318D529A78744007526D9 /* PaymentInfoBandWidthRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183E29A78743007526D9 /* PaymentInfoBandWidthRowView.swift */; };
+		D77318D629A78744007526D9 /* PaymentInfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773183F29A78743007526D9 /* PaymentInfoRowView.swift */; };
+		D77318D729A78744007526D9 /* PaymentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184029A78743007526D9 /* PaymentInfoView.swift */; };
+		D77318D829A78744007526D9 /* AddAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184329A78743007526D9 /* AddAddressViewModel.swift */; };
+		D77318D929A78744007526D9 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184429A78743007526D9 /* AddAddressViewController.swift */; };
+		D77318DA29A78744007526D9 /* AddressListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184629A78743007526D9 /* AddressListViewModel.swift */; };
+		D77318DB29A78744007526D9 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184729A78743007526D9 /* AddressListViewController.swift */; };
+		D77318DC29A78744007526D9 /* AddressViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184829A78743007526D9 /* AddressViewCell.swift */; };
+		D77318DD29A78744007526D9 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184929A78743007526D9 /* AddressModel.swift */; };
+		D77318DE29A78744007526D9 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184B29A78743007526D9 /* TransferViewController.swift */; };
+		D77318DF29A78744007526D9 /* TransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184C29A78743007526D9 /* TransferViewModel.swift */; };
+		D77318E029A78744007526D9 /* MinersFeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184E29A78743007526D9 /* MinersFeesView.swift */; };
+		D77318E129A78744007526D9 /* TransferAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773184F29A78743007526D9 /* TransferAmountView.swift */; };
+		D77318E229A78744007526D9 /* ReceivingAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185029A78743007526D9 /* ReceivingAddressView.swift */; };
+		D77318E329A78744007526D9 /* SetGasFeesPriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185229A78743007526D9 /* SetGasFeesPriorityView.swift */; };
+		D77318E429A78744007526D9 /* GasFeesPriorityViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185329A78743007526D9 /* GasFeesPriorityViewCell.swift */; };
+		D77318E529A78744007526D9 /* SetGasFeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185429A78743007526D9 /* SetGasFeeViewController.swift */; };
+		D77318E629A78744007526D9 /* SetGasFeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185529A78743007526D9 /* SetGasFeeViewModel.swift */; };
+		D77318E729A78744007526D9 /* RecoveryPhrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185829A78743007526D9 /* RecoveryPhrasesViewModel.swift */; };
+		D77318E829A78744007526D9 /* RecoveryPhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185929A78743007526D9 /* RecoveryPhrasesViewController.swift */; };
+		D77318E929A78744007526D9 /* ConfirmPhrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185B29A78743007526D9 /* ConfirmPhrasesViewModel.swift */; };
+		D77318EA29A78744007526D9 /* ConfirmPhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185C29A78743007526D9 /* ConfirmPhrasesViewController.swift */; };
+		D77318EB29A78744007526D9 /* SuggestionPhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185E29A78743007526D9 /* SuggestionPhrasesView.swift */; };
+		D77318EC29A78744007526D9 /* MnemonicPhrasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773185F29A78743007526D9 /* MnemonicPhrasesModel.swift */; };
+		D77318ED29A78744007526D9 /* MnemonicPhrasesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186129A78743007526D9 /* MnemonicPhrasesCollectionViewCell.swift */; };
+		D77318EE29A78744007526D9 /* MnemonicPhrasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186229A78743007526D9 /* MnemonicPhrasesViewModel.swift */; };
+		D77318EF29A78744007526D9 /* MnemonicPhrasesSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186329A78743007526D9 /* MnemonicPhrasesSelectedView.swift */; };
+		D77318F029A78744007526D9 /* MnemonicPhrasesSelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186429A78743007526D9 /* MnemonicPhrasesSelectedViewModel.swift */; };
+		D77318F129A78744007526D9 /* MnemonicPhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186529A78743007526D9 /* MnemonicPhrasesView.swift */; };
+		D77318F229A78744007526D9 /* DisplayPrivateKeySheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186729A78743007526D9 /* DisplayPrivateKeySheetViewController.swift */; };
+		D77318F329A78744007526D9 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186829A78743007526D9 /* ReceiveViewController.swift */; };
+		D77318F429A78744007526D9 /* ChoosePrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186929A78743007526D9 /* ChoosePrivateKeyViewController.swift */; };
+		D77318F529A78744007526D9 /* ChoosePrivateKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186A29A78743007526D9 /* ChoosePrivateKeyViewModel.swift */; };
+		D77318F629A78744007526D9 /* ReceiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186B29A78743007526D9 /* ReceiveViewModel.swift */; };
+		D77318F729A78744007526D9 /* RecentRecordsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186E29A78743007526D9 /* RecentRecordsDetailsViewController.swift */; };
+		D77318F829A78744007526D9 /* RecentRecordsDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773186F29A78743007526D9 /* RecentRecordsDetailsModel.swift */; };
+		D77318F929A78744007526D9 /* RecentRecordsTransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187129A78743007526D9 /* RecentRecordsTransactionDetails.swift */; };
+		D77318FA29A78744007526D9 /* TimeGasTransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187229A78743007526D9 /* TimeGasTransactionDetailsView.swift */; };
+		D77318FB29A78744007526D9 /* CurrencyAssetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187329A78743007526D9 /* CurrencyAssetCardView.swift */; };
+		D77318FC29A78744007526D9 /* ToFromTransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187429A78743007526D9 /* ToFromTransactionDetailsView.swift */; };
+		D77318FD29A78744007526D9 /* ToFromTransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187529A78743007526D9 /* ToFromTransactionRow.swift */; };
+		D77318FE29A78744007526D9 /* RecentRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187729A78743007526D9 /* RecentRecordsViewController.swift */; };
+		D77318FF29A78744007526D9 /* RecentRecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187829A78743007526D9 /* RecentRecordsViewModel.swift */; };
+		D773190029A78744007526D9 /* RecentRecordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187B29A78743007526D9 /* RecentRecordsTableViewCell.swift */; };
+		D773190129A78744007526D9 /* BackupSecondNoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187D29A78743007526D9 /* BackupSecondNoticeViewModel.swift */; };
+		D773190229A78744007526D9 /* BackupNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773187F29A78743007526D9 /* BackupNoticeView.swift */; };
+		D773190329A78744007526D9 /* BackUpMnemonicPhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188029A78743007526D9 /* BackUpMnemonicPhraseViewModel.swift */; };
+		D773190429A78744007526D9 /* BackupSecondNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188129A78743007526D9 /* BackupSecondNoticeViewController.swift */; };
+		D773190529A78744007526D9 /* BackUpMnemonicPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188229A78743007526D9 /* BackUpMnemonicPhraseViewController.swift */; };
+		D773190629A78744007526D9 /* BackupNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188329A78743007526D9 /* BackupNoticeViewController.swift */; };
+		D773190729A78744007526D9 /* CurrencyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188629A78743007526D9 /* CurrencyDetailsViewModel.swift */; };
+		D773190829A78744007526D9 /* TransactionsHistoryPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188729A78743007526D9 /* TransactionsHistoryPagerViewController.swift */; };
+		D773190929A78744007526D9 /* TransactionsHistoryPagerTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188829A78743007526D9 /* TransactionsHistoryPagerTab.swift */; };
+		D773190A29A78744007526D9 /* TransactionsHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188929A78743007526D9 /* TransactionsHistoryModel.swift */; };
+		D773190B29A78744007526D9 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188A29A78743007526D9 /* TryAgainView.swift */; };
+		D773190C29A78744007526D9 /* TransactionsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188C29A78743007526D9 /* TransactionsHistoryView.swift */; };
+		D773190D29A78744007526D9 /* BandwidthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188D29A78743007526D9 /* BandwidthView.swift */; };
+		D773190E29A78744007526D9 /* TransactionsHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188E29A78743007526D9 /* TransactionsHistoryViewCell.swift */; };
+		D773190F29A78744007526D9 /* CurrencyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773188F29A78743007526D9 /* CurrencyDetailsViewController.swift */; };
+		D773191029A78744007526D9 /* TransactionsHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189029A78743007526D9 /* TransactionsHistoryViewModel.swift */; };
+		D773191129A78744007526D9 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189229A78743007526D9 /* CurrencyViewController.swift */; };
+		D773191229A78744007526D9 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189329A78743007526D9 /* CurrencyModel.swift */; };
+		D773191329A78744007526D9 /* CurrencyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189529A78743007526D9 /* CurrencyHeaderView.swift */; };
+		D773191429A78744007526D9 /* CurrencyReceiveAndBandwidthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189629A78743007526D9 /* CurrencyReceiveAndBandwidthView.swift */; };
+		D773191529A78744007526D9 /* CurrencyPressentAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189729A78743007526D9 /* CurrencyPressentAssetsView.swift */; };
+		D773191629A78744007526D9 /* CurrencyAssetsCotainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189829A78743007526D9 /* CurrencyAssetsCotainerView.swift */; };
+		D773191729A78744007526D9 /* CurrencyAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189929A78743007526D9 /* CurrencyAssetsView.swift */; };
+		D773191829A78744007526D9 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189A29A78743007526D9 /* CurrencyViewModel.swift */; };
+		D773191929A78744007526D9 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189C29A78743007526D9 /* FileManager.swift */; };
+		D773191A29A78744007526D9 /* SDKAddressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189E29A78743007526D9 /* SDKAddressProtocol.swift */; };
+		D773191B29A78744007526D9 /* SDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189F29A78743007526D9 /* SDKManager.swift */; };
+		D773191C29A78744007526D9 /* WalletSdkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77318A029A78743007526D9 /* WalletSdkCore.xcframework */; };
+		D773191D29A78744007526D9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A229A78743007526D9 /* UIImageView+Extension.swift */; };
+		D773191E29A78744007526D9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A329A78743007526D9 /* UIFont+Extension.swift */; };
+		D773191F29A78744007526D9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A429A78743007526D9 /* UIColor+Extension.swift */; };
+		D773192029A78744007526D9 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A529A78743007526D9 /* UILabel+Extension.swift */; };
+		D773192129A78744007526D9 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A629A78743007526D9 /* NSObject+Extension.swift */; };
+		D773192229A78744007526D9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A729A78743007526D9 /* UIView+Extension.swift */; };
+		D773192329A78744007526D9 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A829A78743007526D9 /* UINavigationController+Extension.swift */; };
+		D773192429A78744007526D9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A929A78743007526D9 /* Double+Extension.swift */; };
+		D773192529A78744007526D9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318AA29A78743007526D9 /* UIViewController+Extension.swift */; };
+		D773192629A78744007526D9 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318AB29A78743007526D9 /* UIStackView+Extension.swift */; };
+		D773192729A78744007526D9 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318AC29A78743007526D9 /* Notification+Extension.swift */; };
+		D773192829A78744007526D9 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318AD29A78743007526D9 /* Array+Extension.swift */; };
 		E4B180FD04A7707AE839372EC23F513E /* ShareWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DEB3ABDD5585AECE02700E41A1B3E4 /* ShareWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -59,9 +182,132 @@
 		AFE687A1873F3A7EB1A0D7913637D4F6 /* Pods-ShareWallet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareWallet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B22B305A19D6D1F5F0736E77468B1A8A /* Pods-ShareWallet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareWallet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BCEF28F066840046161A301279039F87 /* Pods-ShareWallet_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShareWallet_Example"; path = Pods_ShareWallet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShareWallet; path = ShareWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AD158978FC0E5C568E5F6C795B3B42 /* Pods-ShareWallet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShareWallet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D69918D962140A65CCD7BB8789C2C824 /* Pods-ShareWallet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShareWallet_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D773180729A78743007526D9 /* CurrencyAssetsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAssetsModel.swift; sourceTree = "<group>"; };
+		D773180829A78743007526D9 /* PublicAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicAddressModel.swift; sourceTree = "<group>"; };
+		D773180929A78743007526D9 /* ConfigurationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
+		D773180A29A78743007526D9 /* CoinRatioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinRatioModel.swift; sourceTree = "<group>"; };
+		D773180B29A78743007526D9 /* RecentTransactionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTransactionsModel.swift; sourceTree = "<group>"; };
+		D773180C29A78743007526D9 /* TransactionRowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRowModel.swift; sourceTree = "<group>"; };
+		D773180D29A78743007526D9 /* TransactionDetailsNotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailsNotificationModel.swift; sourceTree = "<group>"; };
+		D773181029A78743007526D9 /* CurrencyAssetsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAssetsEnum.swift; sourceTree = "<group>"; };
+		D773181129A78743007526D9 /* TransactionsHistoryOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryOptions.swift; sourceTree = "<group>"; };
+		D773181229A78743007526D9 /* TransactionsStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsStatus.swift; sourceTree = "<group>"; };
+		D773181429A78743007526D9 /* TitleAndSubtitleVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleAndSubtitleVerticalView.swift; sourceTree = "<group>"; };
+		D773181529A78743007526D9 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		D773181729A78743007526D9 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		D773181829A78743007526D9 /* TitleAndSubtitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleAndSubtitleView.swift; sourceTree = "<group>"; };
+		D773181A29A78743007526D9 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D773181B29A78743007526D9 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		D773181D29A78743007526D9 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		D773181E29A78743007526D9 /* PopUpTwoActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpTwoActionsViewController.swift; sourceTree = "<group>"; };
+		D773181F29A78743007526D9 /* PopUpActionWithIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpActionWithIconViewController.swift; sourceTree = "<group>"; };
+		D773182029A78743007526D9 /* CustomLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingViewController.swift; sourceTree = "<group>"; };
+		D773182129A78743007526D9 /* CircleButtonWithTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButtonWithTitle.swift; sourceTree = "<group>"; };
+		D773182329A78743007526D9 /* TimerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHelper.swift; sourceTree = "<group>"; };
+		D773182429A78743007526D9 /* Wallet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		D773182529A78743007526D9 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D773182629A78743007526D9 /* LocalDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDefaultsKeys.swift; sourceTree = "<group>"; };
+		D773182929A78743007526D9 /* EnterYourPinCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterYourPinCodeViewModel.swift; sourceTree = "<group>"; };
+		D773182A29A78743007526D9 /* SetPinCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeViewModel.swift; sourceTree = "<group>"; };
+		D773182B29A78743007526D9 /* SetPinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeViewController.swift; sourceTree = "<group>"; };
+		D773182C29A78743007526D9 /* EnterYourPinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterYourPinCodeViewController.swift; sourceTree = "<group>"; };
+		D773182E29A78743007526D9 /* CodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
+		D773183029A78743007526D9 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D773183129A78743007526D9 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		D773183229A78743007526D9 /* BychatMockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BychatMockViewController.swift; sourceTree = "<group>"; };
+		D773183429A78743007526D9 /* SplashIdentityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashIdentityView.swift; sourceTree = "<group>"; };
+		D773183529A78743007526D9 /* SplashViewViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewViewCell.swift; sourceTree = "<group>"; };
+		D773183829A78743007526D9 /* ScanQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRCodeViewController.swift; sourceTree = "<group>"; };
+		D773183A29A78743007526D9 /* PaymentDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewModel.swift; sourceTree = "<group>"; };
+		D773183B29A78743007526D9 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
+		D773183D29A78743007526D9 /* PaymentInfoMinerFeeRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfoMinerFeeRowView.swift; sourceTree = "<group>"; };
+		D773183E29A78743007526D9 /* PaymentInfoBandWidthRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfoBandWidthRowView.swift; sourceTree = "<group>"; };
+		D773183F29A78743007526D9 /* PaymentInfoRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfoRowView.swift; sourceTree = "<group>"; };
+		D773184029A78743007526D9 /* PaymentInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfoView.swift; sourceTree = "<group>"; };
+		D773184329A78743007526D9 /* AddAddressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressViewModel.swift; sourceTree = "<group>"; };
+		D773184429A78743007526D9 /* AddAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		D773184629A78743007526D9 /* AddressListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewModel.swift; sourceTree = "<group>"; };
+		D773184729A78743007526D9 /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
+		D773184829A78743007526D9 /* AddressViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewCell.swift; sourceTree = "<group>"; };
+		D773184929A78743007526D9 /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		D773184B29A78743007526D9 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		D773184C29A78743007526D9 /* TransferViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewModel.swift; sourceTree = "<group>"; };
+		D773184E29A78743007526D9 /* MinersFeesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinersFeesView.swift; sourceTree = "<group>"; };
+		D773184F29A78743007526D9 /* TransferAmountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferAmountView.swift; sourceTree = "<group>"; };
+		D773185029A78743007526D9 /* ReceivingAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingAddressView.swift; sourceTree = "<group>"; };
+		D773185229A78743007526D9 /* SetGasFeesPriorityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGasFeesPriorityView.swift; sourceTree = "<group>"; };
+		D773185329A78743007526D9 /* GasFeesPriorityViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasFeesPriorityViewCell.swift; sourceTree = "<group>"; };
+		D773185429A78743007526D9 /* SetGasFeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGasFeeViewController.swift; sourceTree = "<group>"; };
+		D773185529A78743007526D9 /* SetGasFeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGasFeeViewModel.swift; sourceTree = "<group>"; };
+		D773185829A78743007526D9 /* RecoveryPhrasesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPhrasesViewModel.swift; sourceTree = "<group>"; };
+		D773185929A78743007526D9 /* RecoveryPhrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPhrasesViewController.swift; sourceTree = "<group>"; };
+		D773185B29A78743007526D9 /* ConfirmPhrasesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhrasesViewModel.swift; sourceTree = "<group>"; };
+		D773185C29A78743007526D9 /* ConfirmPhrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhrasesViewController.swift; sourceTree = "<group>"; };
+		D773185E29A78743007526D9 /* SuggestionPhrasesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionPhrasesView.swift; sourceTree = "<group>"; };
+		D773185F29A78743007526D9 /* MnemonicPhrasesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesModel.swift; sourceTree = "<group>"; };
+		D773186129A78743007526D9 /* MnemonicPhrasesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D773186229A78743007526D9 /* MnemonicPhrasesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesViewModel.swift; sourceTree = "<group>"; };
+		D773186329A78743007526D9 /* MnemonicPhrasesSelectedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesSelectedView.swift; sourceTree = "<group>"; };
+		D773186429A78743007526D9 /* MnemonicPhrasesSelectedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesSelectedViewModel.swift; sourceTree = "<group>"; };
+		D773186529A78743007526D9 /* MnemonicPhrasesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicPhrasesView.swift; sourceTree = "<group>"; };
+		D773186729A78743007526D9 /* DisplayPrivateKeySheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPrivateKeySheetViewController.swift; sourceTree = "<group>"; };
+		D773186829A78743007526D9 /* ReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		D773186929A78743007526D9 /* ChoosePrivateKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePrivateKeyViewController.swift; sourceTree = "<group>"; };
+		D773186A29A78743007526D9 /* ChoosePrivateKeyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePrivateKeyViewModel.swift; sourceTree = "<group>"; };
+		D773186B29A78743007526D9 /* ReceiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveViewModel.swift; sourceTree = "<group>"; };
+		D773186E29A78743007526D9 /* RecentRecordsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsDetailsViewController.swift; sourceTree = "<group>"; };
+		D773186F29A78743007526D9 /* RecentRecordsDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsDetailsModel.swift; sourceTree = "<group>"; };
+		D773187129A78743007526D9 /* RecentRecordsTransactionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsTransactionDetails.swift; sourceTree = "<group>"; };
+		D773187229A78743007526D9 /* TimeGasTransactionDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGasTransactionDetailsView.swift; sourceTree = "<group>"; };
+		D773187329A78743007526D9 /* CurrencyAssetCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAssetCardView.swift; sourceTree = "<group>"; };
+		D773187429A78743007526D9 /* ToFromTransactionDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToFromTransactionDetailsView.swift; sourceTree = "<group>"; };
+		D773187529A78743007526D9 /* ToFromTransactionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToFromTransactionRow.swift; sourceTree = "<group>"; };
+		D773187729A78743007526D9 /* RecentRecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsViewController.swift; sourceTree = "<group>"; };
+		D773187829A78743007526D9 /* RecentRecordsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsViewModel.swift; sourceTree = "<group>"; };
+		D773187B29A78743007526D9 /* RecentRecordsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentRecordsTableViewCell.swift; sourceTree = "<group>"; };
+		D773187D29A78743007526D9 /* BackupSecondNoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupSecondNoticeViewModel.swift; sourceTree = "<group>"; };
+		D773187F29A78743007526D9 /* BackupNoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupNoticeView.swift; sourceTree = "<group>"; };
+		D773188029A78743007526D9 /* BackUpMnemonicPhraseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUpMnemonicPhraseViewModel.swift; sourceTree = "<group>"; };
+		D773188129A78743007526D9 /* BackupSecondNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupSecondNoticeViewController.swift; sourceTree = "<group>"; };
+		D773188229A78743007526D9 /* BackUpMnemonicPhraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUpMnemonicPhraseViewController.swift; sourceTree = "<group>"; };
+		D773188329A78743007526D9 /* BackupNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupNoticeViewController.swift; sourceTree = "<group>"; };
+		D773188629A78743007526D9 /* CurrencyDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewModel.swift; sourceTree = "<group>"; };
+		D773188729A78743007526D9 /* TransactionsHistoryPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryPagerViewController.swift; sourceTree = "<group>"; };
+		D773188829A78743007526D9 /* TransactionsHistoryPagerTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryPagerTab.swift; sourceTree = "<group>"; };
+		D773188929A78743007526D9 /* TransactionsHistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryModel.swift; sourceTree = "<group>"; };
+		D773188A29A78743007526D9 /* TryAgainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
+		D773188C29A78743007526D9 /* TransactionsHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryView.swift; sourceTree = "<group>"; };
+		D773188D29A78743007526D9 /* BandwidthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandwidthView.swift; sourceTree = "<group>"; };
+		D773188E29A78743007526D9 /* TransactionsHistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryViewCell.swift; sourceTree = "<group>"; };
+		D773188F29A78743007526D9 /* CurrencyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewController.swift; sourceTree = "<group>"; };
+		D773189029A78743007526D9 /* TransactionsHistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsHistoryViewModel.swift; sourceTree = "<group>"; };
+		D773189229A78743007526D9 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		D773189329A78743007526D9 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		D773189529A78743007526D9 /* CurrencyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyHeaderView.swift; sourceTree = "<group>"; };
+		D773189629A78743007526D9 /* CurrencyReceiveAndBandwidthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyReceiveAndBandwidthView.swift; sourceTree = "<group>"; };
+		D773189729A78743007526D9 /* CurrencyPressentAssetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPressentAssetsView.swift; sourceTree = "<group>"; };
+		D773189829A78743007526D9 /* CurrencyAssetsCotainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAssetsCotainerView.swift; sourceTree = "<group>"; };
+		D773189929A78743007526D9 /* CurrencyAssetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAssetsView.swift; sourceTree = "<group>"; };
+		D773189A29A78743007526D9 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		D773189C29A78743007526D9 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		D773189E29A78743007526D9 /* SDKAddressProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKAddressProtocol.swift; sourceTree = "<group>"; };
+		D773189F29A78743007526D9 /* SDKManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKManager.swift; sourceTree = "<group>"; };
+		D77318A029A78743007526D9 /* WalletSdkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WalletSdkCore.xcframework; sourceTree = "<group>"; };
+		D77318A229A78743007526D9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D77318A329A78743007526D9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		D77318A429A78743007526D9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D77318A529A78743007526D9 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		D77318A629A78743007526D9 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		D77318A729A78743007526D9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D77318A829A78743007526D9 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		D77318A929A78743007526D9 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		D77318AA29A78743007526D9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D77318AB29A78743007526D9 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		D77318AC29A78743007526D9 /* Notification+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		D77318AD29A78743007526D9 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		DB7612FF4553C73AB40728E020702472 /* Pods-ShareWallet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareWallet_Tests-dummy.m"; sourceTree = "<group>"; };
 		DCAC550773FC91B8ED96654C5E0EB36D /* ShareWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShareWallet.modulemap; sourceTree = "<group>"; };
 		E0C190CA537B13ED7935025F1E565FD2 /* ShareWallet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShareWallet-Info.plist"; sourceTree = "<group>"; };
@@ -83,6 +329,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D773191C29A78744007526D9 /* WalletSdkCore.xcframework in Frameworks */,
 				356F7F5827503F8098C137EC207B8119 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +444,7 @@
 			children = (
 				BCEF28F066840046161A301279039F87 /* Pods-ShareWallet_Example */,
 				2196ED14878F3A0E50E730700306E74A /* Pods-ShareWallet_Tests */,
-				C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet */,
+				C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,8 +471,491 @@
 		D773180529A77E83007526D9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D77318A129A78743007526D9 /* Extensions */,
+				D773189B29A78743007526D9 /* Manager */,
+				D773180629A78743007526D9 /* Model */,
+				D773180E29A78743007526D9 /* Utilities */,
+				D773182729A78743007526D9 /* ViewControllers */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D773180629A78743007526D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D773180729A78743007526D9 /* CurrencyAssetsModel.swift */,
+				D773180829A78743007526D9 /* PublicAddressModel.swift */,
+				D773180929A78743007526D9 /* ConfigurationModel.swift */,
+				D773180A29A78743007526D9 /* CoinRatioModel.swift */,
+				D773180B29A78743007526D9 /* RecentTransactionsModel.swift */,
+				D773180C29A78743007526D9 /* TransactionRowModel.swift */,
+				D773180D29A78743007526D9 /* TransactionDetailsNotificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D773180E29A78743007526D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D773180F29A78743007526D9 /* Enum */,
+				D773181329A78743007526D9 /* CommonUI */,
+				D773182229A78743007526D9 /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D773180F29A78743007526D9 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D773181029A78743007526D9 /* CurrencyAssetsEnum.swift */,
+				D773181129A78743007526D9 /* TransactionsHistoryOptions.swift */,
+				D773181229A78743007526D9 /* TransactionsStatus.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D773181329A78743007526D9 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				D773181429A78743007526D9 /* TitleAndSubtitleVerticalView.swift */,
+				D773181529A78743007526D9 /* EmptyView.swift */,
+				D773181629A78743007526D9 /* Tutorial  */,
+				D773181829A78743007526D9 /* TitleAndSubtitleView.swift */,
+				D773181929A78743007526D9 /* Webview */,
+				D773181B29A78743007526D9 /* CircleButton.swift */,
+				D773181C29A78743007526D9 /* PopUps */,
+				D773182129A78743007526D9 /* CircleButtonWithTitle.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		D773181629A78743007526D9 /* Tutorial  */ = {
+			isa = PBXGroup;
+			children = (
+				D773181729A78743007526D9 /* TutorialViewController.swift */,
+			);
+			path = "Tutorial ";
+			sourceTree = "<group>";
+		};
+		D773181929A78743007526D9 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				D773181A29A78743007526D9 /* WebViewController.swift */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		D773181C29A78743007526D9 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				D773181D29A78743007526D9 /* Spinner.swift */,
+				D773181E29A78743007526D9 /* PopUpTwoActionsViewController.swift */,
+				D773181F29A78743007526D9 /* PopUpActionWithIconViewController.swift */,
+				D773182029A78743007526D9 /* CustomLoadingViewController.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		D773182229A78743007526D9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D773182329A78743007526D9 /* TimerHelper.swift */,
+				D773182429A78743007526D9 /* Wallet-Bridging-Header.h */,
+				D773182529A78743007526D9 /* Helper.swift */,
+				D773182629A78743007526D9 /* LocalDefaultsKeys.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D773182729A78743007526D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D773182829A78743007526D9 /* PinCode */,
+				D773182F29A78743007526D9 /* Splash */,
+				D773183629A78743007526D9 /* Transfer */,
+				D773185629A78743007526D9 /* Phrases */,
+				D773186629A78743007526D9 /* Receive */,
+				D773186C29A78743007526D9 /* RecentRecords */,
+				D773187C29A78743007526D9 /* BackupNotice */,
+				D773188429A78743007526D9 /* Currency */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D773182829A78743007526D9 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				D773182929A78743007526D9 /* EnterYourPinCodeViewModel.swift */,
+				D773182A29A78743007526D9 /* SetPinCodeViewModel.swift */,
+				D773182B29A78743007526D9 /* SetPinCodeViewController.swift */,
+				D773182C29A78743007526D9 /* EnterYourPinCodeViewController.swift */,
+				D773182D29A78743007526D9 /* PinCodeView */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		D773182D29A78743007526D9 /* PinCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				D773182E29A78743007526D9 /* CodeTextField.swift */,
+			);
+			path = PinCodeView;
+			sourceTree = "<group>";
+		};
+		D773182F29A78743007526D9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D773183029A78743007526D9 /* SplashViewController.swift */,
+				D773183129A78743007526D9 /* SplashViewModel.swift */,
+				D773183229A78743007526D9 /* BychatMockViewController.swift */,
+				D773183329A78743007526D9 /* Views */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D773183329A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773183429A78743007526D9 /* SplashIdentityView.swift */,
+				D773183529A78743007526D9 /* SplashViewViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773183629A78743007526D9 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				D773183729A78743007526D9 /* ScanQRCode */,
+				D773183929A78743007526D9 /* Payment */,
+				D773184129A78743007526D9 /* Address */,
+				D773184A29A78743007526D9 /* Main */,
+				D773185129A78743007526D9 /* SetGasFee */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		D773183729A78743007526D9 /* ScanQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D773183829A78743007526D9 /* ScanQRCodeViewController.swift */,
+			);
+			path = ScanQRCode;
+			sourceTree = "<group>";
+		};
+		D773183929A78743007526D9 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				D773183A29A78743007526D9 /* PaymentDetailsViewModel.swift */,
+				D773183B29A78743007526D9 /* PaymentDetailsViewController.swift */,
+				D773183C29A78743007526D9 /* Views */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		D773183C29A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773183D29A78743007526D9 /* PaymentInfoMinerFeeRowView.swift */,
+				D773183E29A78743007526D9 /* PaymentInfoBandWidthRowView.swift */,
+				D773183F29A78743007526D9 /* PaymentInfoRowView.swift */,
+				D773184029A78743007526D9 /* PaymentInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773184129A78743007526D9 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				D773184229A78743007526D9 /* Add */,
+				D773184529A78743007526D9 /* List */,
+				D773184929A78743007526D9 /* AddressModel.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		D773184229A78743007526D9 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				D773184329A78743007526D9 /* AddAddressViewModel.swift */,
+				D773184429A78743007526D9 /* AddAddressViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		D773184529A78743007526D9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D773184629A78743007526D9 /* AddressListViewModel.swift */,
+				D773184729A78743007526D9 /* AddressListViewController.swift */,
+				D773184829A78743007526D9 /* AddressViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D773184A29A78743007526D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D773184B29A78743007526D9 /* TransferViewController.swift */,
+				D773184C29A78743007526D9 /* TransferViewModel.swift */,
+				D773184D29A78743007526D9 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D773184D29A78743007526D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D773184E29A78743007526D9 /* MinersFeesView.swift */,
+				D773184F29A78743007526D9 /* TransferAmountView.swift */,
+				D773185029A78743007526D9 /* ReceivingAddressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D773185129A78743007526D9 /* SetGasFee */ = {
+			isa = PBXGroup;
+			children = (
+				D773185229A78743007526D9 /* SetGasFeesPriorityView.swift */,
+				D773185329A78743007526D9 /* GasFeesPriorityViewCell.swift */,
+				D773185429A78743007526D9 /* SetGasFeeViewController.swift */,
+				D773185529A78743007526D9 /* SetGasFeeViewModel.swift */,
+			);
+			path = SetGasFee;
+			sourceTree = "<group>";
+		};
+		D773185629A78743007526D9 /* Phrases */ = {
+			isa = PBXGroup;
+			children = (
+				D773185729A78743007526D9 /* Recovery */,
+				D773185A29A78743007526D9 /* Confirm */,
+				D773185D29A78743007526D9 /* Views */,
+			);
+			path = Phrases;
+			sourceTree = "<group>";
+		};
+		D773185729A78743007526D9 /* Recovery */ = {
+			isa = PBXGroup;
+			children = (
+				D773185829A78743007526D9 /* RecoveryPhrasesViewModel.swift */,
+				D773185929A78743007526D9 /* RecoveryPhrasesViewController.swift */,
+			);
+			path = Recovery;
+			sourceTree = "<group>";
+		};
+		D773185A29A78743007526D9 /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				D773185B29A78743007526D9 /* ConfirmPhrasesViewModel.swift */,
+				D773185C29A78743007526D9 /* ConfirmPhrasesViewController.swift */,
+			);
+			path = Confirm;
+			sourceTree = "<group>";
+		};
+		D773185D29A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773185E29A78743007526D9 /* SuggestionPhrasesView.swift */,
+				D773185F29A78743007526D9 /* MnemonicPhrasesModel.swift */,
+				D773186029A78743007526D9 /* Cells */,
+				D773186229A78743007526D9 /* MnemonicPhrasesViewModel.swift */,
+				D773186329A78743007526D9 /* MnemonicPhrasesSelectedView.swift */,
+				D773186429A78743007526D9 /* MnemonicPhrasesSelectedViewModel.swift */,
+				D773186529A78743007526D9 /* MnemonicPhrasesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773186029A78743007526D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D773186129A78743007526D9 /* MnemonicPhrasesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D773186629A78743007526D9 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				D773186729A78743007526D9 /* DisplayPrivateKeySheetViewController.swift */,
+				D773186829A78743007526D9 /* ReceiveViewController.swift */,
+				D773186929A78743007526D9 /* ChoosePrivateKeyViewController.swift */,
+				D773186A29A78743007526D9 /* ChoosePrivateKeyViewModel.swift */,
+				D773186B29A78743007526D9 /* ReceiveViewModel.swift */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		D773186C29A78743007526D9 /* RecentRecords */ = {
+			isa = PBXGroup;
+			children = (
+				D773186D29A78743007526D9 /* Details */,
+				D773187629A78743007526D9 /* RecentRecordsList */,
+			);
+			path = RecentRecords;
+			sourceTree = "<group>";
+		};
+		D773186D29A78743007526D9 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D773186E29A78743007526D9 /* RecentRecordsDetailsViewController.swift */,
+				D773186F29A78743007526D9 /* RecentRecordsDetailsModel.swift */,
+				D773187029A78743007526D9 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		D773187029A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773187129A78743007526D9 /* RecentRecordsTransactionDetails.swift */,
+				D773187229A78743007526D9 /* TimeGasTransactionDetailsView.swift */,
+				D773187329A78743007526D9 /* CurrencyAssetCardView.swift */,
+				D773187429A78743007526D9 /* ToFromTransactionDetailsView.swift */,
+				D773187529A78743007526D9 /* ToFromTransactionRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773187629A78743007526D9 /* RecentRecordsList */ = {
+			isa = PBXGroup;
+			children = (
+				D773187729A78743007526D9 /* RecentRecordsViewController.swift */,
+				D773187829A78743007526D9 /* RecentRecordsViewModel.swift */,
+				D773187929A78743007526D9 /* Views */,
+			);
+			path = RecentRecordsList;
+			sourceTree = "<group>";
+		};
+		D773187929A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773187A29A78743007526D9 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773187A29A78743007526D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D773187B29A78743007526D9 /* RecentRecordsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D773187C29A78743007526D9 /* BackupNotice */ = {
+			isa = PBXGroup;
+			children = (
+				D773187D29A78743007526D9 /* BackupSecondNoticeViewModel.swift */,
+				D773187E29A78743007526D9 /* Views */,
+				D773188029A78743007526D9 /* BackUpMnemonicPhraseViewModel.swift */,
+				D773188129A78743007526D9 /* BackupSecondNoticeViewController.swift */,
+				D773188229A78743007526D9 /* BackUpMnemonicPhraseViewController.swift */,
+				D773188329A78743007526D9 /* BackupNoticeViewController.swift */,
+			);
+			path = BackupNotice;
+			sourceTree = "<group>";
+		};
+		D773187E29A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773187F29A78743007526D9 /* BackupNoticeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773188429A78743007526D9 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				D773188529A78743007526D9 /* Details */,
+				D773189129A78743007526D9 /* Main */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		D773188529A78743007526D9 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D773188629A78743007526D9 /* CurrencyDetailsViewModel.swift */,
+				D773188729A78743007526D9 /* TransactionsHistoryPagerViewController.swift */,
+				D773188829A78743007526D9 /* TransactionsHistoryPagerTab.swift */,
+				D773188929A78743007526D9 /* TransactionsHistoryModel.swift */,
+				D773188A29A78743007526D9 /* TryAgainView.swift */,
+				D773188B29A78743007526D9 /* Views */,
+				D773188F29A78743007526D9 /* CurrencyDetailsViewController.swift */,
+				D773189029A78743007526D9 /* TransactionsHistoryViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		D773188B29A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773188C29A78743007526D9 /* TransactionsHistoryView.swift */,
+				D773188D29A78743007526D9 /* BandwidthView.swift */,
+				D773188E29A78743007526D9 /* TransactionsHistoryViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773189129A78743007526D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D773189229A78743007526D9 /* CurrencyViewController.swift */,
+				D773189329A78743007526D9 /* CurrencyModel.swift */,
+				D773189429A78743007526D9 /* Views */,
+				D773189A29A78743007526D9 /* CurrencyViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D773189429A78743007526D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D773189529A78743007526D9 /* CurrencyHeaderView.swift */,
+				D773189629A78743007526D9 /* CurrencyReceiveAndBandwidthView.swift */,
+				D773189729A78743007526D9 /* CurrencyPressentAssetsView.swift */,
+				D773189829A78743007526D9 /* CurrencyAssetsCotainerView.swift */,
+				D773189929A78743007526D9 /* CurrencyAssetsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D773189B29A78743007526D9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D773189C29A78743007526D9 /* FileManager.swift */,
+				D773189D29A78743007526D9 /* SDK */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D773189D29A78743007526D9 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D773189E29A78743007526D9 /* SDKAddressProtocol.swift */,
+				D773189F29A78743007526D9 /* SDKManager.swift */,
+				D77318A029A78743007526D9 /* WalletSdkCore.xcframework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D77318A129A78743007526D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D77318A229A78743007526D9 /* UIImageView+Extension.swift */,
+				D77318A329A78743007526D9 /* UIFont+Extension.swift */,
+				D77318A429A78743007526D9 /* UIColor+Extension.swift */,
+				D77318A529A78743007526D9 /* UILabel+Extension.swift */,
+				D77318A629A78743007526D9 /* NSObject+Extension.swift */,
+				D77318A729A78743007526D9 /* UIView+Extension.swift */,
+				D77318A829A78743007526D9 /* UINavigationController+Extension.swift */,
+				D77318A929A78743007526D9 /* Double+Extension.swift */,
+				D77318AA29A78743007526D9 /* UIViewController+Extension.swift */,
+				D77318AB29A78743007526D9 /* UIStackView+Extension.swift */,
+				D77318AC29A78743007526D9 /* Notification+Extension.swift */,
+				D77318AD29A78743007526D9 /* Array+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +981,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77318C429A78743007526D9 /* Wallet-Bridging-Header.h in Headers */,
 				E4B180FD04A7707AE839372EC23F513E /* ShareWallet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +1004,7 @@
 			);
 			name = ShareWallet;
 			productName = ShareWallet;
-			productReference = C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet */;
+			productReference = C8BCFB4850FE20DBD77DACF36E09E1DE /* ShareWallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		95F39FBBB6E3F0CDA9A3A7F2CDAC1DF4 /* Pods-ShareWallet_Example */ = {
@@ -388,7 +1119,128 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77318E929A78744007526D9 /* ConfirmPhrasesViewModel.swift in Sources */,
+				D77318BF29A78743007526D9 /* PopUpTwoActionsViewController.swift in Sources */,
+				D77318B429A78743007526D9 /* TransactionDetailsNotificationModel.swift in Sources */,
+				D773190929A78744007526D9 /* TransactionsHistoryPagerTab.swift in Sources */,
+				D773192529A78744007526D9 /* UIViewController+Extension.swift in Sources */,
+				D773190329A78744007526D9 /* BackUpMnemonicPhraseViewModel.swift in Sources */,
+				D77318F629A78744007526D9 /* ReceiveViewModel.swift in Sources */,
+				D77318C929A78743007526D9 /* SetPinCodeViewController.swift in Sources */,
+				D77318E229A78744007526D9 /* ReceivingAddressView.swift in Sources */,
+				D773192029A78744007526D9 /* UILabel+Extension.swift in Sources */,
+				D773190A29A78744007526D9 /* TransactionsHistoryModel.swift in Sources */,
+				D77318FF29A78744007526D9 /* RecentRecordsViewModel.swift in Sources */,
+				D773191329A78744007526D9 /* CurrencyHeaderView.swift in Sources */,
+				D773191629A78744007526D9 /* CurrencyAssetsCotainerView.swift in Sources */,
+				D77318BE29A78743007526D9 /* Spinner.swift in Sources */,
+				D773190029A78744007526D9 /* RecentRecordsTableViewCell.swift in Sources */,
+				D773191E29A78744007526D9 /* UIFont+Extension.swift in Sources */,
+				D77318CB29A78743007526D9 /* CodeTextField.swift in Sources */,
+				D773191929A78744007526D9 /* FileManager.swift in Sources */,
+				D77318D829A78744007526D9 /* AddAddressViewModel.swift in Sources */,
+				D77318B929A78743007526D9 /* EmptyView.swift in Sources */,
+				D77318DC29A78744007526D9 /* AddressViewCell.swift in Sources */,
+				D77318D329A78744007526D9 /* PaymentDetailsViewController.swift in Sources */,
+				D77318C829A78743007526D9 /* SetPinCodeViewModel.swift in Sources */,
+				D77318CD29A78743007526D9 /* SplashViewModel.swift in Sources */,
+				D77318BD29A78743007526D9 /* CircleButton.swift in Sources */,
+				D77318D929A78744007526D9 /* AddAddressViewController.swift in Sources */,
+				D773191229A78744007526D9 /* CurrencyModel.swift in Sources */,
+				D77318F129A78744007526D9 /* MnemonicPhrasesView.swift in Sources */,
+				D77318E529A78744007526D9 /* SetGasFeeViewController.swift in Sources */,
+				D773191029A78744007526D9 /* TransactionsHistoryViewModel.swift in Sources */,
+				D773192229A78744007526D9 /* UIView+Extension.swift in Sources */,
+				D77318D629A78744007526D9 /* PaymentInfoRowView.swift in Sources */,
+				D773190429A78744007526D9 /* BackupSecondNoticeViewController.swift in Sources */,
+				D77318B129A78743007526D9 /* CoinRatioModel.swift in Sources */,
+				D77318CE29A78743007526D9 /* BychatMockViewController.swift in Sources */,
+				D773190529A78744007526D9 /* BackUpMnemonicPhraseViewController.swift in Sources */,
+				D77318C229A78743007526D9 /* CircleButtonWithTitle.swift in Sources */,
+				D77318EA29A78744007526D9 /* ConfirmPhrasesViewController.swift in Sources */,
+				D77318C129A78743007526D9 /* CustomLoadingViewController.swift in Sources */,
+				D77318D029A78744007526D9 /* SplashViewViewCell.swift in Sources */,
+				D773190829A78744007526D9 /* TransactionsHistoryPagerViewController.swift in Sources */,
+				D77318B029A78743007526D9 /* ConfigurationModel.swift in Sources */,
+				D77318EC29A78744007526D9 /* MnemonicPhrasesModel.swift in Sources */,
+				D77318EE29A78744007526D9 /* MnemonicPhrasesViewModel.swift in Sources */,
+				D773192329A78744007526D9 /* UINavigationController+Extension.swift in Sources */,
+				D77318F529A78744007526D9 /* ChoosePrivateKeyViewModel.swift in Sources */,
+				D77318FE29A78744007526D9 /* RecentRecordsViewController.swift in Sources */,
+				D77318F229A78744007526D9 /* DisplayPrivateKeySheetViewController.swift in Sources */,
+				D77318F429A78744007526D9 /* ChoosePrivateKeyViewController.swift in Sources */,
+				D773191D29A78744007526D9 /* UIImageView+Extension.swift in Sources */,
+				D77318DD29A78744007526D9 /* AddressModel.swift in Sources */,
+				D77318D729A78744007526D9 /* PaymentInfoView.swift in Sources */,
+				D773192629A78744007526D9 /* UIStackView+Extension.swift in Sources */,
+				D773191F29A78744007526D9 /* UIColor+Extension.swift in Sources */,
+				D773190129A78744007526D9 /* BackupSecondNoticeViewModel.swift in Sources */,
+				D773190629A78744007526D9 /* BackupNoticeViewController.swift in Sources */,
 				609E982DC2CD6C62D3AD1A7B3E2D24F5 /* ShareWallet-dummy.m in Sources */,
+				D77318C029A78743007526D9 /* PopUpActionWithIconViewController.swift in Sources */,
+				D77318F829A78744007526D9 /* RecentRecordsDetailsModel.swift in Sources */,
+				D773192429A78744007526D9 /* Double+Extension.swift in Sources */,
+				D77318F329A78744007526D9 /* ReceiveViewController.swift in Sources */,
+				D77318D529A78744007526D9 /* PaymentInfoBandWidthRowView.swift in Sources */,
+				D77318B229A78743007526D9 /* RecentTransactionsModel.swift in Sources */,
+				D77318AE29A78743007526D9 /* CurrencyAssetsModel.swift in Sources */,
+				D77318E429A78744007526D9 /* GasFeesPriorityViewCell.swift in Sources */,
+				D77318B529A78743007526D9 /* CurrencyAssetsEnum.swift in Sources */,
+				D773190729A78744007526D9 /* CurrencyDetailsViewModel.swift in Sources */,
+				D77318BB29A78743007526D9 /* TitleAndSubtitleView.swift in Sources */,
+				D773190B29A78744007526D9 /* TryAgainView.swift in Sources */,
+				D77318BA29A78743007526D9 /* TutorialViewController.swift in Sources */,
+				D77318E029A78744007526D9 /* MinersFeesView.swift in Sources */,
+				D77318F029A78744007526D9 /* MnemonicPhrasesSelectedViewModel.swift in Sources */,
+				D773190C29A78744007526D9 /* TransactionsHistoryView.swift in Sources */,
+				D77318C629A78743007526D9 /* LocalDefaultsKeys.swift in Sources */,
+				D77318AF29A78743007526D9 /* PublicAddressModel.swift in Sources */,
+				D773190D29A78744007526D9 /* BandwidthView.swift in Sources */,
+				D77318E329A78744007526D9 /* SetGasFeesPriorityView.swift in Sources */,
+				D773191429A78744007526D9 /* CurrencyReceiveAndBandwidthView.swift in Sources */,
+				D77318B629A78743007526D9 /* TransactionsHistoryOptions.swift in Sources */,
+				D77318CA29A78743007526D9 /* EnterYourPinCodeViewController.swift in Sources */,
+				D773190E29A78744007526D9 /* TransactionsHistoryViewCell.swift in Sources */,
+				D77318FC29A78744007526D9 /* ToFromTransactionDetailsView.swift in Sources */,
+				D773191129A78744007526D9 /* CurrencyViewController.swift in Sources */,
+				D77318F929A78744007526D9 /* RecentRecordsTransactionDetails.swift in Sources */,
+				D77318E129A78744007526D9 /* TransferAmountView.swift in Sources */,
+				D77318F729A78744007526D9 /* RecentRecordsDetailsViewController.swift in Sources */,
+				D77318B729A78743007526D9 /* TransactionsStatus.swift in Sources */,
+				D77318EB29A78744007526D9 /* SuggestionPhrasesView.swift in Sources */,
+				D77318FA29A78744007526D9 /* TimeGasTransactionDetailsView.swift in Sources */,
+				D77318FD29A78744007526D9 /* ToFromTransactionRow.swift in Sources */,
+				D773191529A78744007526D9 /* CurrencyPressentAssetsView.swift in Sources */,
+				D77318DB29A78744007526D9 /* AddressListViewController.swift in Sources */,
+				D77318D429A78744007526D9 /* PaymentInfoMinerFeeRowView.swift in Sources */,
+				D77318B329A78743007526D9 /* TransactionRowModel.swift in Sources */,
+				D773190F29A78744007526D9 /* CurrencyDetailsViewController.swift in Sources */,
+				D77318B829A78743007526D9 /* TitleAndSubtitleVerticalView.swift in Sources */,
+				D773191829A78744007526D9 /* CurrencyViewModel.swift in Sources */,
+				D77318DA29A78744007526D9 /* AddressListViewModel.swift in Sources */,
+				D773192829A78744007526D9 /* Array+Extension.swift in Sources */,
+				D773192729A78744007526D9 /* Notification+Extension.swift in Sources */,
+				D77318E729A78744007526D9 /* RecoveryPhrasesViewModel.swift in Sources */,
+				D773192129A78744007526D9 /* NSObject+Extension.swift in Sources */,
+				D773191A29A78744007526D9 /* SDKAddressProtocol.swift in Sources */,
+				D77318EF29A78744007526D9 /* MnemonicPhrasesSelectedView.swift in Sources */,
+				D77318CC29A78743007526D9 /* SplashViewController.swift in Sources */,
+				D77318C329A78743007526D9 /* TimerHelper.swift in Sources */,
+				D77318ED29A78744007526D9 /* MnemonicPhrasesCollectionViewCell.swift in Sources */,
+				D773190229A78744007526D9 /* BackupNoticeView.swift in Sources */,
+				D77318C729A78743007526D9 /* EnterYourPinCodeViewModel.swift in Sources */,
+				D77318DE29A78744007526D9 /* TransferViewController.swift in Sources */,
+				D77318E629A78744007526D9 /* SetGasFeeViewModel.swift in Sources */,
+				D77318BC29A78743007526D9 /* WebViewController.swift in Sources */,
+				D77318C529A78743007526D9 /* Helper.swift in Sources */,
+				D77318CF29A78743007526D9 /* SplashIdentityView.swift in Sources */,
+				D77318D129A78744007526D9 /* ScanQRCodeViewController.swift in Sources */,
+				D77318D229A78744007526D9 /* PaymentDetailsViewModel.swift in Sources */,
+				D773191729A78744007526D9 /* CurrencyAssetsView.swift in Sources */,
+				D773191B29A78744007526D9 /* SDKManager.swift in Sources */,
+				D77318E829A78744007526D9 /* RecoveryPhrasesViewController.swift in Sources */,
+				D77318FB29A78744007526D9 /* CurrencyAssetCardView.swift in Sources */,
+				D77318DF29A78744007526D9 /* TransferViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +1278,12 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShareWallet/ShareWallet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShareWallet/ShareWallet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ShareWallet/ShareWallet.modulemap";
 				PRODUCT_MODULE_NAME = ShareWallet;
 				PRODUCT_NAME = ShareWallet;
@@ -458,7 +1314,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ShareWallet_Example/Pods-ShareWallet_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShareWallet_Example/Pods-ShareWallet_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -492,7 +1352,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ShareWallet_Tests/Pods-ShareWallet_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShareWallet_Tests/Pods-ShareWallet_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -563,7 +1427,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -585,8 +1450,12 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShareWallet/ShareWallet-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShareWallet/ShareWallet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ShareWallet/ShareWallet.modulemap";
 				PRODUCT_MODULE_NAME = ShareWallet;
 				PRODUCT_NAME = ShareWallet;
@@ -618,7 +1487,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ShareWallet_Example/Pods-ShareWallet_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShareWallet_Example/Pods-ShareWallet_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -717,7 +1590,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ShareWallet_Tests/Pods-ShareWallet_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShareWallet_Tests/Pods-ShareWallet_Tests.modulemap";
 				OTHER_LDFLAGS = "";
