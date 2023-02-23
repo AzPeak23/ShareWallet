@@ -37,5 +37,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit', '~> 5.6.0'
+  s.dependency 'XLPagerTabStrip', :git => 'https://github.com/AbubakerM/ForkedXLPagerTabStrip'
+  s.dependency 'SwipeCellKit'
+  s.dependency 'ToastViewSwift'
+  s.dependency 'JPush', '4.6.6'
 end
