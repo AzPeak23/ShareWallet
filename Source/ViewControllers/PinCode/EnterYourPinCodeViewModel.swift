@@ -9,7 +9,7 @@ import Foundation
 
 public class EnterYourPinCodeViewModel {
     
-    init() {
+    public init() {
         
     }
     

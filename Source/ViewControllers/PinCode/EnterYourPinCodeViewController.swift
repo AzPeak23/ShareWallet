@@ -45,7 +45,7 @@ class EnterYourPinCodeViewController: UIViewController {
     var bottomConstraint: Constraint?
 
     let viewModel: EnterYourPinCodeViewModel
-    init(viewModel: EnterYourPinCodeViewModel) {
+    public init(viewModel: EnterYourPinCodeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         setupViews()

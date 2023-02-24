@@ -99,11 +99,11 @@ class BychatMockViewController: UIViewController {
             return
         }
        
-        UserDefaults.standard.set(text, forKey: DefaultsKeys.userId)
-        JPUSHService.setAlias(text, completion: { code, msg, code2 in
-            debugPrint("Alias set successfully:", code, msg ?? "no message", code2)
-            print("Alias set successfully:")
-        }, seq: 0)
+//        UserDefaults.standard.set(text, forKey: DefaultsKeys.userId)
+//        JPUSHService.setAlias(text, completion: { code, msg, code2 in
+//            debugPrint("Alias set successfully:", code, msg ?? "no message", code2)
+//            print("Alias set successfully:")
+//        }, seq: 0)
         
         
         SDKManager.shared.userId = text
