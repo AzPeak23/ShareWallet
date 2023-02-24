@@ -29,10 +29,10 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
-  s.source_files = ['**/*.{swift}', '**/*.{xcframework}', '**/*.{ttf}']
-  
+  s.source_files = ['**/*.{swift}', '**/*.{ttf}']
+  #, '**/*.{xcframework}'
    s.resource_bundles = {
-     'ShareWallet' => ['**/*.png', '**/*.json']
+     'ShareWallet' => ['**/*.{png}', '**/*.{json}']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

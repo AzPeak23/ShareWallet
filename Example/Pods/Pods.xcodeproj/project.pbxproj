@@ -125,7 +125,6 @@
 		D773191929A78744007526D9 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189C29A78743007526D9 /* FileManager.swift */; };
 		D773191A29A78744007526D9 /* SDKAddressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189E29A78743007526D9 /* SDKAddressProtocol.swift */; };
 		D773191B29A78744007526D9 /* SDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D773189F29A78743007526D9 /* SDKManager.swift */; };
-		D773191C29A78744007526D9 /* WalletSdkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77318A029A78743007526D9 /* WalletSdkCore.xcframework */; };
 		D773191D29A78744007526D9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A229A78743007526D9 /* UIImageView+Extension.swift */; };
 		D773191E29A78744007526D9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A329A78743007526D9 /* UIFont+Extension.swift */; };
 		D773191F29A78744007526D9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77318A429A78743007526D9 /* UIColor+Extension.swift */; };
@@ -150,6 +149,7 @@
 		D7F7EDFF29A7A6C500D8E3A8 /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EDF329A7A6C500D8E3A8 /* TitilliumWeb-LightItalic.ttf */; };
 		D7F7EE0029A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EDF429A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf */; };
 		D7F7EE0129A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EDF529A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf */; };
+		D7F7EE0529A87EE300D8E3A8 /* WalletSdkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F7EE0429A87EE300D8E3A8 /* WalletSdkCore.xcframework */; };
 		E4B180FD04A7707AE839372EC23F513E /* ShareWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DEB3ABDD5585AECE02700E41A1B3E4 /* ShareWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -307,7 +307,6 @@
 		D773189C29A78743007526D9 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		D773189E29A78743007526D9 /* SDKAddressProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKAddressProtocol.swift; sourceTree = "<group>"; };
 		D773189F29A78743007526D9 /* SDKManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKManager.swift; sourceTree = "<group>"; };
-		D77318A029A78743007526D9 /* WalletSdkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WalletSdkCore.xcframework; sourceTree = "<group>"; };
 		D77318A229A78743007526D9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		D77318A329A78743007526D9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		D77318A429A78743007526D9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -332,6 +331,7 @@
 		D7F7EDF329A7A6C500D8E3A8 /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
 		D7F7EDF429A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		D7F7EDF529A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		D7F7EE0429A87EE300D8E3A8 /* WalletSdkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WalletSdkCore.xcframework; sourceTree = "<group>"; };
 		DB7612FF4553C73AB40728E020702472 /* Pods-ShareWallet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareWallet_Tests-dummy.m"; sourceTree = "<group>"; };
 		DCAC550773FC91B8ED96654C5E0EB36D /* ShareWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShareWallet.modulemap; sourceTree = "<group>"; };
 		E0C190CA537B13ED7935025F1E565FD2 /* ShareWallet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShareWallet-Info.plist"; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D773191C29A78744007526D9 /* WalletSdkCore.xcframework in Frameworks */,
+				D7F7EE0529A87EE300D8E3A8 /* WalletSdkCore.xcframework in Frameworks */,
 				356F7F5827503F8098C137EC207B8119 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -958,9 +958,9 @@
 		D773189D29A78743007526D9 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				D7F7EE0429A87EE300D8E3A8 /* WalletSdkCore.xcframework */,
 				D773189E29A78743007526D9 /* SDKAddressProtocol.swift */,
 				D773189F29A78743007526D9 /* SDKManager.swift */,
-				D77318A029A78743007526D9 /* WalletSdkCore.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
