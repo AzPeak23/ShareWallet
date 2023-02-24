@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class EnterYourPinCodeViewController: UIViewController {
+public class EnterYourPinCodeViewController: UIViewController {
     
     private let containerView: UIView = {
         let view = UIView()
@@ -56,7 +56,7 @@ class EnterYourPinCodeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
     }
@@ -145,7 +145,7 @@ class EnterYourPinCodeViewController: UIViewController {
 
 extension EnterYourPinCodeViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         
         NotificationCenter.default.addObserver(
             self,
@@ -160,7 +160,7 @@ extension EnterYourPinCodeViewController {
             object: nil)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
