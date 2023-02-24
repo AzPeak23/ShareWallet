@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-public class SplashViewController: UIViewController {
+class SplashViewController: UIViewController {
 
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()

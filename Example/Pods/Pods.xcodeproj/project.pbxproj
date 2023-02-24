@@ -150,6 +150,7 @@
 		D7F7EE0029A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EDF429A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf */; };
 		D7F7EE0129A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EDF529A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf */; };
 		D7F7EE0529A87EE300D8E3A8 /* WalletSdkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F7EE0429A87EE300D8E3A8 /* WalletSdkCore.xcframework */; };
+		D7F7EE0729A8873500D8E3A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F7EE0629A8873500D8E3A8 /* Localizable.strings */; };
 		E4B180FD04A7707AE839372EC23F513E /* ShareWallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DEB3ABDD5585AECE02700E41A1B3E4 /* ShareWallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -332,6 +333,7 @@
 		D7F7EDF429A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		D7F7EDF529A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
 		D7F7EE0429A87EE300D8E3A8 /* WalletSdkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WalletSdkCore.xcframework; sourceTree = "<group>"; };
+		D7F7EE0629A8873500D8E3A8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DB7612FF4553C73AB40728E020702472 /* Pods-ShareWallet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareWallet_Tests-dummy.m"; sourceTree = "<group>"; };
 		DCAC550773FC91B8ED96654C5E0EB36D /* ShareWallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShareWallet.modulemap; sourceTree = "<group>"; };
 		E0C190CA537B13ED7935025F1E565FD2 /* ShareWallet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShareWallet-Info.plist"; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 		D773180529A77E83007526D9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D7F7EE0629A8873500D8E3A8 /* Localizable.strings */,
 				D7F7EDE929A7A6C400D8E3A8 /* Assets.xcassets */,
 				D7F7EDEA29A7A6C500D8E3A8 /* Font */,
 				D77318A129A78743007526D9 /* Extensions */,
@@ -1139,6 +1142,7 @@
 				D7F7EE0129A7A6C500D8E3A8 /* TitilliumWeb-Light.ttf in Resources */,
 				D7F7EE0029A7A6C500D8E3A8 /* TitilliumWeb-Italic.ttf in Resources */,
 				D7F7EDFD29A7A6C500D8E3A8 /* TitilliumWeb-ExtraLightItalic.ttf in Resources */,
+				D7F7EE0729A8873500D8E3A8 /* Localizable.strings in Resources */,
 				D7F7EDFE29A7A6C500D8E3A8 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
 				D7F7EDFA29A7A6C500D8E3A8 /* TitilliumWeb-SemiBold.ttf in Resources */,
 				D7F7EDF729A7A6C500D8E3A8 /* TitilliumWeb-Black.ttf in Resources */,
